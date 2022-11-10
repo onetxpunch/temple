@@ -22,7 +22,6 @@ jobs:
         env:
           TESTS_MAINNET_RPC_URL: ${{ secrets.TESTS_MAINNET_RPC_URL }}
   fuzzTest:
-    if: ${{ true }} # Foundry tests are failing due to compilation error, need to figure out why but don't want to waste any more minutes
     name: Foundry Tests
     runs-on: ubuntu-latest
     steps:
