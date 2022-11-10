@@ -41,5 +41,5 @@ jobs:
       - run: forge install
         working-directory: protocol
 
-      - run: forge test -vvvv --gas-report
+      - run: forge test -vvvv --gas-report --fork-url https://rpc.ankr.com/eth
         working-directory: protocol
