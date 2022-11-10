@@ -2,8 +2,6 @@ name: Protocol Tests
 on:
   pull_request:
     types: [opened, synchronize]
-    paths:
-      - 'protocol/**'
 
 jobs:
   e2eTest:
